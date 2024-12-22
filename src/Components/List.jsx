@@ -67,29 +67,31 @@ function Item({ elem, onDeleteItems }) {
     );
   } else
     content = (
-      <div className="list">
+      <div className="save-list">
         <input
           type="text"
           value={localName}
           onChange={(e) => setLocalName(e.target.value)}
+          className="save-input"
         />
         <input
           type="date"
           value={localDuedate}
           onChange={(e) => setLocalDuedate(e.target.value)}
+          className="save-input"
+          
         />
-        <span className="edit-delete">
+       
           <button
             onClick={() => {
               setEdited(true);
               setSavechange(false);
             }}
-            className="list-btn"
+            className="save-btn"
           >
             Save
           </button>
-          <Delete />
-        </span>
+       
       </div>
     );
 

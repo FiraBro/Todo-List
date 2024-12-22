@@ -14,22 +14,22 @@ const data = [
     id: 1,
   },
   {
-    name: "watch youtube",
+    name: "content",
     duedate: "2024-12-14",
     id: 2,
   },
   {
-    name: "make my dinner",
+    name: "make dinner",
     duedate: "2024-12-15",
     id: 3,
   },
   {
-    name: "watch and play with kids",
+    name: "watch game",
     duedate: "2024-12-16",
     id: 4,
   },
   {
-    name: "take a shower",
+    name: "take shower",
     duedate: "2024-12-12",
     id: 5,
   },

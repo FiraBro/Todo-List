@@ -27,7 +27,7 @@ body {
 }
 .background {
   color: #fff;
-  background-color: #000;
+  background-color: #383838;
   height: 100vh;
   line-height: 1.25;
   padding: 60px;
@@ -72,10 +72,20 @@ body {
   cursor: pointer;
   width: 50%;
 }
-.edit-delete {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 10px;
+
+.save-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+  column-gap: 20px;
+}
+.save-list input{
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+.save-list button{
+  font-size: 1.2rem;
+  padding: 10px 15px;
 }
 .main {
   max-height: 25vh;
@@ -98,13 +108,79 @@ body {
   font-weight: bold;
 }
 .footer-span {
-  color: #ffa500;
+  color: #fff9ed;
 }
-@media (max-width: 680px) {
+@media (max-width:500px){
+
+  .header-head {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .back-btn {
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+  .input {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  .main{
+    overflow-x: hidden;
+  }
+  .list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 0.8fr;
+    /* width: 95%; */
+    padding: 0 10px;
+  }
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    /* width: 100%; */
+  }
+  .edite-delete{
+    display: flex;
+    gap:10px;
+    width: 100%;
+  }
+  .edite-delete button{
+    font-size: 1.5rem;
+  }
+  .span{
+    font-size: 0.7rem;
+  }
+  .list-btn,
+  .btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .footer {
+    padding-bottom: 60px;
+  }
+  .footer-head {
+    font-size: 1rem;
+  }
+  .save-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .save-list input{
+    padding: 4px 6px; 
+    font-size: 0.5rem;
+  }
+  .save-list button{
+    font-size: 0.5rem;
+    padding: 4px 8px;
+  }
+}
+@media (max-width: 700px) {
   body {
     padding: 20px;
-    /* background-color: #ede7e2; */
-    background-color: #edba59;
+    /* background-color: #dadada; */
     color: #000;
   }
   .header {
@@ -114,17 +190,33 @@ body {
     justify-content: center;
     row-gap: 10px;
   }
+  .save-input{
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
   .header-head {
     font-size: 2rem;
     line-height: 40px;
   }
   .back-btn {
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 1rem;
   }
+  .save-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .save-list input{
+    padding: 10px 15px; 
+    font-size: 0.9rem;
+  }
+  .save-list button{
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
   .background {
-    background-color: #000;
-    color: #ede7e2;
+    color: #fff;
     padding: 20px;
   }
   .form {
@@ -138,37 +230,45 @@ body {
   .input {
     font-size: 1rem;
     width: 100%;
+    padding:14px 0;
   }
   .btn {
     align-items: stretch;
     width: 100%;
-  }
-  .main {
+    padding: 14px 0;
     font-size: 1rem;
+  }
+  .mains {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .main{
+    width: 100%;
   }
   .list {
     font-size: 1rem;
     display: grid;
-    grid-template-columns: 150px 150px 100px;
+    /* grid-template-columns: 150px 150px 100px; */
+    grid-template-columns: 1fr 1fr 0.8fr;
     column-gap: 10px;
     margin: 10px 30px;
   }
   .list-btn {
-    padding: 0 8px;
+    padding: 5px 20px;
     font-size: 0.5rem;
   }
   .span {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
   .footer-head {
     font-size: 2rem;
     margin-bottom: 10px;
   }
   .footer-span {
-    color: #ede7e2;
+    color: #ffb71b;
   }
 }
-@media (min-width: 681px) and (max-width: 1200px) {
+@media (min-width: 701px) and (max-width: 1200px) {
   .header-head {
     font-size: 1.6rem;
     line-height: 30px;
